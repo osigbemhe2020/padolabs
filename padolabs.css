@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    color: rgb(250, 240, 217);
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(69, 43, 167);
+    justify-content: space-between;
+    padding: 12px 1.5%;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo h2{
+    font-size: 25px;
+}
+
+.nav{
+    width: 50%;
+   justify-content:center;
+}
+.nav div {
+    margin-right:10%;
+    display: flex;
+    align-items: center;
+}
+.nav div p{
+    font-size: 18px;
+    font-weight: 600;   
+}
+.socials{
+    width: 10%;
+   justify-content:center; 
+}
+.socials div {
+    margin-right:10%;
+    display: flex;
+    align-items: center;
+}
+.hero-web{
+    height: 90vh;
+    background-image:url(images/sample2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    
+}
+.grad-layer{
+ height: 90vh;
+ background: linear-gradient(
+  to right, 
+  rgba(28, 34, 43, 0.9) 35%, 
+  rgba(32, 40, 58, 0.5) 65%,
+  rgba(255, 255, 255, 0.1) 100%
+);
+ padding: 4%;
+}
+.content{
+    opacity: 1;
+    width: 40%;
+    z-index: 99;
+    color: rgb(250, 240, 217);
+}
+
+.content h1{
+    font-size: 40px;
+    line-height: 1.2em;
+    margin-bottom: 7vh;
+    word-spacing:8px;
+}
+.benefits{
+    background-color: rgba(227, 235, 255, 0.7);
+     padding-top: 2%;
+     padding-bottom: 2%;
+}
+.odd{
+    text-align: center;
+    font-size: 22px;
+}
+.box-cont{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 8%;
+    justify-content: space-between;
+}
+
+.box{
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.box p{
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.1em;
+}
+.top{
+    padding: 50px;
+    font-size: 25px;
+    background-color:rgba(69, 43, 167,0.85) ;
+   color: rgb(250, 240, 217);
+}
+.top h1{
+    text-align: right;
+}
+
+.body{
+    padding: 4% 2%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 2%;
+}
