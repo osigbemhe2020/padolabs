@@ -50,7 +50,7 @@ header div {
 }
 .hero-web{
     height: 90vh;
-    background-image:url(sample2.jpg);
+    background-image:url(images/sample2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.85;
@@ -222,7 +222,7 @@ header div {
   color: white;
 }
 .graphics{
-  background-image: url(graphics.png);
+  background-image: url(images/graphics.png);
 }
 .others h2{
   font-size: 28px;
