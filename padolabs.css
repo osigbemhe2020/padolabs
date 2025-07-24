@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    color: rgb(250, 240, 217);
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(69, 43, 167);
+    justify-content: space-between;
+    padding: 12px 1.5%;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo h2{
+    font-size: 25px;
+}
+
+.nav{
+    width: 50%;
+   justify-content:center;
+}
+.nav div {
+    margin-right:10%;
+    display: flex;
+    align-items: center;
+}
+.nav div p{
+    font-size: 18px;
+    font-weight: 600;   
+}
+.socials{
+    width: 10%;
+   justify-content:center; 
+}
+.socials div {
+    margin-right:10%;
+    display: flex;
+    align-items: center;
+}
+.hero-web{
+    height: 90vh;
+    background-image:url(sample2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    
+}
+.grad-layer{
+ height: 90vh;
+ background: linear-gradient(
+  to right, 
+  rgba(28, 34, 43, 0.9) 35%, 
+  rgba(32, 40, 58, 0.5) 65%,
+  rgba(255, 255, 255, 0.1) 100%
+);
+ padding: 4%;
+}
+.content{
+    opacity: 1;
+    width: 40%;
+    z-index: 99;
+    color: rgb(250, 240, 217);
+}
+
+.content h1{
+    font-size: 40px;
+    line-height: 1.2em;
+    margin-bottom: 7vh;
+    word-spacing:8px;
+}
+.benefits{
+    background-color: rgba(227, 235, 255, 0.7);
+     padding-top: 2%;
+     padding-bottom: 2%;
+}
+.odd{
+    text-align: center;
+    font-size: 22px;
+}
+.box-cont{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 8%;
+    justify-content: space-between;
+}
+
+.box{
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.box p{
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.1em;
+}
+.top{
+    padding: 50px;
+    font-size: 25px;
+    background-color:rgba(69, 43, 167,0.85) ;
+   color: rgb(250, 240, 217);
+}
+.top h1{
+    text-align: right;
+}
+.top p{
+  font-size: 18px;
+  text-align: right;
+}
+
+.body{
+    padding: 4% 2%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 2%;
+    background-color: rgba(227, 235, 255, 0.7);
+}
+.process{
+     margin: auto;
+}
+.process h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(69, 43, 167);
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.process-wrapper {
+  position: relative;
+  padding-left: 40px;
+  border-left: 3px solid rgb(69, 43, 167); 
+}
+
+.step {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.step-number {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #004b91;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.step-content {
+  background-color: rgb(69, 43, 167);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.step-content h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.step-content p {
+  margin: 10px 0 0;
+  color: white;
+  font-size: 0.85em;
+}
+.item{
+    text-align: left;
+    margin: 1.6em 0.8em;
+    border-bottom: 1px gray solid;
+    padding-bottom: 0.6em;
+  }
+  .item h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .but-row{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+}
+.but-row button{
+  margin: 0.5em 1.5em ;
+  padding: 0.6em 0.8em;
+  background-color: #051930;
+  color: #f1f1f1;
+  text-transform: capitalize;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.support{
+  display:grid;
+  grid-template-columns: 55% 45%;
+  
+}
+.others{
+  background-color:rgb(69, 43, 167) ;
+  padding: 40px;
+  color: white;
+}
+.graphics{
+  background-image: url(graphics.png);
+}
+.others h2{
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.inner{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
