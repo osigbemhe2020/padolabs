@@ -126,12 +126,12 @@ header div {
 .body{
     padding: 4% 2%;
     display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 2%;
+    grid-template-columns: 26% 70%;
+    gap: 4%;
     background-color: rgba(227, 235, 255, 0.7);
 }
 .process{
-     margin: auto;
+     margin: 4% auto;
 }
 .process h2 {
   text-align: center;
@@ -182,7 +182,7 @@ header div {
 .step-content p {
   margin: 10px 0 0;
   color: white;
-  font-size: 0.85em;
+  font-size: 1em;
 }
 .item{
     text-align: left;
@@ -195,14 +195,32 @@ header div {
     margin-bottom: 20px;
     font-weight: 600;
   }
-  .but-row{
+  .item ul{
+    margin-left: 30px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  .item ul li{
+    margin-top: 5px;
+  }
+  .but-row {
   display: flex;
-  flex-direction: row;
-  width: 80%;
-  justify-content: center;
+  justify-content: space-between; /* pushes left and right divs apart */
+  align-items: center; /* vertically align items */
+  width: 100%;
+  padding: 5px 20px;
 }
+
+.right-group {
+  display: flex;
+  gap: 0.5rem; /* space between button and spans */
+  align-items: center;
+  justify-content:right; /* aligns content to the end inside this group */
+  max-width: 270px;
+}
+
 .but-row button{
-  margin: 0.5em 1.5em ;
+  margin: 0.5em 1em ;
   padding: 0.6em 0.8em;
   background-color: #051930;
   color: #f1f1f1;
@@ -210,10 +228,25 @@ header div {
   border-radius: 8px;
   font-weight: 600;
 }
-
+.price span{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.price h5{
+  text-align: center;
+  margin-bottom: 5px;
+}
+.price p{
+  font-size: 0.7em;
+}
+.real{
+  color: rgba(122, 121, 121, 0.8);
+  text-decoration: line-through;
+  margin-right: 5px;
+}
 .support{
   display:grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 50%;
   
 }
 .others{
@@ -223,12 +256,53 @@ header div {
 }
 .graphics{
   background-image: url(images/graphics.png);
+  background-size: cover;
 }
 .others h2{
   font-size: 28px;
   margin-bottom: 15px;
 }
 .inner{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.inner h3{
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+.rec-cont {
+  display: flex;
+  align-items: center;
+  margin-left: 1in;
+  flex-direction: row;
+  gap:5%;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.rec-box {
+  font-style: italic;
+  text-align: left;
+  display: flex;
+  gap:20px;
+  width: 30rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  margin: 10px;
+  border:1px solid gray;
+  font-size: 18px;
+  height:130px
+}
+
+.rec-box span {
+  color: #7600bc;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.rec-box img{
+  width: 90px;
+  height: 90px;
 }
