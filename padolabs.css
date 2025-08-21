@@ -19,13 +19,11 @@ header{
 
 header div {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
 }
 .logo h2{
     font-size: 25px;
 }
-
 .nav{
     width: 50%;
    justify-content:center;
@@ -53,8 +51,7 @@ header div {
     background-image:url(images/sample2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.85;
-    
+    opacity: 0.85;    
 }
 .grad-layer{
  height: 90vh;
@@ -91,12 +88,15 @@ header div {
 .box-cont{
     display: flex;
     flex-direction: row;
-    padding: 2% 8%;
+    gap:16px;
+    padding: 2% 4%;
     justify-content: space-between;
 }
 
 .box{
-    width: 25%;
+    min-width:150px;
+    width: auto;
+    max-width: 300px;
     background-color: white;
     padding: 20px;
     display: flex;
@@ -109,18 +109,22 @@ header div {
     font-size: 13px;
     line-height: 1.1em;
 }
+.box img{
+  width: 65%;
+}
+
 .top{
-    padding: 50px;
-    font-size: 25px;
+    padding: 60px;
     background-color:rgba(69, 43, 167,0.85) ;
    color: rgb(250, 240, 217);
 }
 .top h1{
     text-align: right;
+    font-size: 25px;
 }
 .top p{
   font-size: 18px;
-  text-align: right;
+  text-align: center;
 }
 
 .body{
@@ -150,6 +154,7 @@ header div {
 .step {
   position: relative;
   margin-bottom: 40px;
+  min-width: 250px;
 }
 
 .step-number {
@@ -210,7 +215,12 @@ header div {
   width: 100%;
   padding: 5px 20px;
 }
-
+.left-group {
+  display: flex;
+  gap: 0.5rem; /* space between buttons */
+  align-items: center;
+  justify-content: left; /* aligns content to the start inside this group */
+}
 .right-group {
   display: flex;
   gap: 0.5rem; /* space between button and spans */
@@ -293,7 +303,7 @@ header div {
   margin: 10px;
   border:1px solid gray;
   font-size: 18px;
-  height:130px
+  height:auto
 }
 
 .rec-box span {
@@ -306,3 +316,118 @@ header div {
   width: 90px;
   height: 90px;
 }
+@media (max-width: 900px) {
+    .process-wrapper .step {
+        max-width: 48%;
+    }
+}
+ @media screen and (max-width: 500px) {
+body{
+  overflow-x: hidden;
+}
+  .logo h2{
+    font-size: 18px;
+}
+.nav{
+    width: 60%;
+}
+.nav div p{
+    font-size: 15px;
+    font-weight: 600;   
+}
+  .socials div {
+    margin-right:0%;
+}
+
+.socials img {
+    width:20px;
+}
+
+.content{
+    width: 80%;
+}
+
+.hero-web{
+    height: auto;
+    min-height: 80vh;
+    background-position: center  30% ;
+}
+
+.content h1{
+    font-size: 30px;
+}
+.grad-layer{
+ height: auto;
+ min-height: 80vh;
+}
+.odd{
+    font-size: 14px;
+}
+.box-cont{
+    flex-direction: column;
+    gap:20px; 
+    justify-content:center;
+    padding: 2% auto;
+    align-items: center;
+}
+.top h1{
+    text-align: right;
+}
+.body{
+    display: grid;
+    grid-template-columns: 100%;
+    gap:1%;
+    background-color: rgba(227, 235, 255, 0.7);
+}
+
+.process{
+     margin: 4% auto;
+     max-width: 94vw;
+     padding: 1.5%;
+     
+}
+
+.process-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100vw;
+    padding-left: 0;
+    border-left: 0;
+    scroll-snap-type: x mandatory;
+  }
+
+   .process-wrapper .step {
+    min-width: 88vw;
+    max-width: 88vw;
+    flex: 0 0 90vw;
+    margin-bottom: 0;
+    scroll-snap-align: start;
+  }
+  .step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    margin: 0;
+    /* Optional: add a little spacing from the edges */
+    /* left: 8px; top: 8px; */
+  }
+
+  .step-content {
+    margin-left: 45px; /* add left margin so content doesn't overlap the number */
+  }
+.support{
+  display:grid;
+  grid-template-columns: 100%;
+}
+.graphics{
+display: none;
+}
+.others h2{
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+ }
