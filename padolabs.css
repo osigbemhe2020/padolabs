@@ -350,7 +350,7 @@ body{
 .hero-web{
     height: auto;
     min-height: 80vh;
-    background-position: 60%  center ;
+    background-position: 70%  center ;
 }
 
 .content h1{
@@ -431,5 +431,6 @@ display: none;
   margin-bottom: 14px;
 }
  }
+
 
 
